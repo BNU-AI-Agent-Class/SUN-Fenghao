@@ -108,7 +108,7 @@ messages.append({"role": "user", "content": f"执行完毕:{result}"})
 
 ## 环境变量说明
 
-真实 key 放在 `.env`，不要上传 GitHub。
+真实 key 放在 `.env`，不会上传 GitHub。
 
 本作业脚本优先读取：
 
