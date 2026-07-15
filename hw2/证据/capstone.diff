@@ -1,0 +1,22 @@
+﻿diff --git "a/C:\\Users\\ASUS\\AppData\\Local\\Temp\\qiming_course_guides\\build-your-agents\\demo_project\\notes_app\\analyze.py" "b/hw2_demo\\notes_app\\analyze.py"
+index 59aa340..9f8196a 100644
+--- "a/C:\\Users\\ASUS\\AppData\\Local\\Temp\\qiming_course_guides\\build-your-agents\\demo_project\\notes_app\\analyze.py"
++++ "b/hw2_demo\\notes_app\\analyze.py"
+@@ -15,11 +15,13 @@ def summary():
+     """生成一段统计摘要。"""
+     notes = all_notes()
+     counts = tag_counts()
+-    # BUG: 当没有任何带标签的笔记时,counts 是空列表,counts[0] 会抛 IndexError。
+-    top_tag = counts[0][0]
+     lines = [
+         f"共有 {len(notes)} 条笔记。",
+-        f"最常用的标签是 #{top_tag}。",
+-        f"一共用过 {len(counts)} 个不同标签。",
+     ]
++    if counts:
++        top_tag = counts[0][0]
++        lines.append(f"最常用的标签是 #{top_tag}。")
++        lines.append(f"一共用过 {len(counts)} 个不同标签。")
++    else:
++        lines.append("还没有任何标签。")
+     return "\n".join(lines)

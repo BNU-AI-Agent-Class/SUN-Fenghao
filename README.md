@@ -1,4 +1,22 @@
-# Agent 作业运行说明
+# 智能体在心理学中的应用 · 课程作业
+
+姓名：孙凤豪
+
+## 作业导航
+
+| 日次 | 内容 | 入口 |
+|---|---|---|
+| Day1 | 从最小 API 到带 skill 的 Agent，保留原提交 | 本页下方与根目录 `s0`–`s5` |
+| Day2 | 给 mini Claude Code 增加搜索工具，并完成一次真实 Capstone 修复 | [hw2/说明.md](hw2/说明.md) |
+| Day3 | 启明 Agent 的 DEFINE、四维 Eval、危机红队与迭代 | [day3/README.md](day3/README.md) |
+| Day4 | 公网上线、技术架构、密钥安全、危机护栏与录屏脚本 | [day4/README.md](day4/README.md) |
+| 汇报 | 14 页新版 PPT 与约 15 分钟逐页讲稿 | [presentation](presentation) |
+
+启明线上地址：[https://dream.qimingbot.com](https://dream.qimingbot.com)。课程演示账号见 Day4 README。
+
+---
+
+# Day1 · Agent 作业运行说明
 
 建议按下面顺序逐个运行，每次只关注本版本新增了什么能力。
 

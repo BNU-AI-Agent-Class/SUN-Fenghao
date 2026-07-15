@@ -1,0 +1,10 @@
+{
+  "name": "qiming-course-presentation",
+  "private": true,
+  "scripts": {
+    "build": "node build_qiming_presentation.js"
+  },
+  "dependencies": {
+    "pptxgenjs": "4.0.1"
+  }
+}
